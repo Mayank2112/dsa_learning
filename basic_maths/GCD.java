@@ -18,11 +18,12 @@ public class GCD {
   }
 
   public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    System.out.print("Enter first number: ");
-    long num1 = sc.nextLong();
-    System.out.print("Enter second number: ");
-    long num2 = sc.nextLong();
-    System.out.println(findGCD(num1, num2));
+    try (Scanner sc = new Scanner(System.in)) {
+      System.out.print("Enter first number: ");
+      long num1 = sc.nextLong();
+      System.out.print("Enter second number: ");
+      long num2 = sc.nextLong();
+      System.out.println(findGCD(num1, num2));
+    }
   }
 }
